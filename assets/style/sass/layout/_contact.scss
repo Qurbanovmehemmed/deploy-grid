@@ -1,0 +1,98 @@
+#Contact {
+  margin-top: 650px;
+h1{
+    font-size: 30px;
+}
+  .our {
+    margin-top: 30px;
+    width: 1100x;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 2fr 1fr 2fr;
+    height: 700px;
+    gap: 30px;
+    grid-template-areas:
+      "cub1 cub2 cub3"
+      "cub4 cub2 cub5"
+      "cub4 cub6  cub5";
+
+    div:nth-child(1) {
+      background-color: #835ed2;
+      grid-area: cub1;
+
+      border-radius: 30px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      p {
+        display: flex;
+        align-items: center;
+        width: 366px;
+      }
+    }
+    div:nth-child(2) {
+      grid-area: cub2;
+      width: 366px;
+      border-radius: 30px;
+      img {
+        border-radius: 30px;
+        width: 366px;
+        height: 100%;
+      }
+    }
+    div:nth-child(3) {
+      background-color: black;
+      grid-area: cub3;
+      width: 366px;
+      border-radius: 30px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      p {
+        display: flex;
+        align-items: center;
+        width: 366px;
+      }
+    }
+    div:nth-child(4) {
+      
+      grid-area: cub4;
+      border-radius: 30px;
+      img {
+        border-radius: 30px;
+        width: 366px;
+        height: 100%;
+      }
+    }
+    div:nth-child(5) {
+      
+      grid-area: cub5;
+      border-radius: 30px;
+      img {
+        border-radius: 30px;
+        width: 366px;
+        height: 100%;
+      }
+      
+    }
+    div:nth-child(6) {
+      background-color: #e39b5c;
+      grid-area: cub6;
+      border-radius: 30px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      p {
+        display: flex;
+        align-items: center;
+        width: 366px;
+      }
+    }
+  }
+}

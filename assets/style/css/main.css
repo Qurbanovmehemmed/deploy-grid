@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 113rem;
+  height: 4.8rem;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  display: flex;
+}
+header i {
+  padding-top: 20px;
+  font-size: 30px;
+  display: none;
+}
+header ul {
+  margin-top: 2rem;
+  padding: 1rem;
+  display: flex;
+  gap: 3rem;
+}
+header ul li {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+header ul li:hover {
+  cursor: pointer;
+  color: rgb(205, 146, 36);
+  transition: 300ms;
+}
+@media (max-width: 691px) {
+  header i {
+    display: block;
+  }
+  header ul {
+    display: none;
+  }
+}
+
+footer {
+  background-color: #333333;
+  height: 400px;
+  margin-top: 730px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer p {
+  color: white;
+  font-size: 16px;
+}
+footer p a {
+  color: #CABAEC;
+  text-decoration: underline;
+}
+
+#whyUS {
+  margin-top: 30px;
+}
+#whyUS h1 {
+  font-size: 50px;
+}
+#whyUS .whyBOX {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+#whyUS .whyBOX p {
+  font-size: 20px;
+  opacity: 0.7;
+}
+#whyUS .whyBOX .box1 {
+  width: 550px;
+  height: 280px;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 25px;
+}
+#whyUS .whyBOX .box1 .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #835ED2;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+}
+#whyUS .whyBOX .box1 .icon img {
+  width: 49px;
+  height: 49px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#whyUS .whyBOX .box2 {
+  width: 550px;
+  height: 280px;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 25px;
+}
+#whyUS .whyBOX .box2 .icon1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EDD56E;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+}
+#whyUS .whyBOX .box2 .icon1 i {
+  font-size: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#whyUS .whyBOX .box3 {
+  width: 550px;
+  height: 280px;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 25px;
+}
+#whyUS .whyBOX .box3 .icon2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E39B5C;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+}
+#whyUS .whyBOX .box3 .icon2 i {
+  font-size: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#whyUS .whyBOX .box4 {
+  border-radius: 30px;
+  width: 550px;
+  height: 280px;
+  border: 2px solid black;
+  padding: 25px;
+}
+#whyUS .whyBOX .box4 .icon3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8DC3C0;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+}
+#whyUS .whyBOX .box4 .icon3 img {
+  width: 49px;
+  height: 49px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 1137px) {
+  .whyBOX {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+#about {
+  width: 100%;
+  height: 584px;
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 861px) {
+  .aboutIMG .IMG {
+    width: 235px;
+    height: 318px;
+  }
+  .aboutIMG .IMG img {
+    transform: scale(0.8);
+    bottom: 0px;
+  }
+}
+@media (max-width: 691px) {
+  .aboutIMG {
+    flex-direction: column;
+  }
+}
+.aboutIMG .IMG {
+  position: relative;
+}
+.aboutIMG .IMG img {
+  border-radius: 25px;
+  width: 335px;
+  height: 403px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.aboutIMG .IMG .circle1 {
+  width: 159px;
+  height: 159px;
+  border-radius: 50%;
+  background-color: #835ED2;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  transform: translateX(40px);
+  z-index: 2;
+}
+.aboutIMG .IMG .circle2 {
+  z-index: 1;
+  width: 159px;
+  height: 159px;
+  border-radius: 50%;
+  background-color: #D99458;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  transform: translateX(140px);
+}
+
+.aboutTEXT {
+  width: 40%;
+}
+.aboutTEXT h1 {
+  font-size: 50px;
+}
+.aboutTEXT p {
+  font-size: 18.8px;
+  height: 180px;
+}
+.aboutTEXT span {
+  font-size: 18.8px;
+}
+.aboutTEXT span a {
+  color: #835ED2;
+}
+.aboutTEXT .but button {
+  width: 189px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.aboutTEXT .but button:hover {
+  border: none;
+  transition: 250ms;
+}
+
+.about {
+  height: 584px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+
+#Contact {
+  margin-top: 650px;
+}
+#Contact h1 {
+  font-size: 30px;
+}
+#Contact .our {
+  margin-top: 30px;
+  width: 1100x;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 2fr 1fr 2fr;
+  height: 700px;
+  gap: 30px;
+  grid-template-areas: "cub1 cub2 cub3" "cub4 cub2 cub5" "cub4 cub6  cub5";
+}
+#Contact .our div:nth-child(1) {
+  background-color: #835ed2;
+  grid-area: cub1;
+  border-radius: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+#Contact .our div:nth-child(1) p {
+  display: flex;
+  align-items: center;
+  width: 366px;
+}
+#Contact .our div:nth-child(2) {
+  grid-area: cub2;
+  width: 366px;
+  border-radius: 30px;
+}
+#Contact .our div:nth-child(2) img {
+  border-radius: 30px;
+  width: 366px;
+  height: 100%;
+}
+#Contact .our div:nth-child(3) {
+  background-color: black;
+  grid-area: cub3;
+  width: 366px;
+  border-radius: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+#Contact .our div:nth-child(3) p {
+  display: flex;
+  align-items: center;
+  width: 366px;
+}
+#Contact .our div:nth-child(4) {
+  grid-area: cub4;
+  border-radius: 30px;
+}
+#Contact .our div:nth-child(4) img {
+  border-radius: 30px;
+  width: 366px;
+  height: 100%;
+}
+#Contact .our div:nth-child(5) {
+  grid-area: cub5;
+  border-radius: 30px;
+}
+#Contact .our div:nth-child(5) img {
+  border-radius: 30px;
+  width: 366px;
+  height: 100%;
+}
+#Contact .our div:nth-child(6) {
+  background-color: #e39b5c;
+  grid-area: cub6;
+  border-radius: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+#Contact .our div:nth-child(6) p {
+  display: flex;
+  align-items: center;
+  width: 366px;
+}

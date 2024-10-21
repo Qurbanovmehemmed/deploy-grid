@@ -1,0 +1,18 @@
+footer {
+  background-color: #333333;
+  height: 400px;
+  margin-top: 730px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  p {
+    color: white;
+    font-size: 16px;
+    a{
+        color: #CABAEC;
+        text-decoration: underline;
+    }
+  }
+}

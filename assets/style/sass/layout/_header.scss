@@ -1,0 +1,36 @@
+header{
+    width: 100%;
+    display: flex;
+    
+    i{
+        padding-top: 20px;
+        font-size: 30px;
+        display: none;
+    }
+    
+    ul{
+        margin-top: 2rem;
+        padding: 1rem;
+        display: flex;
+        gap: 3rem;
+        li{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            &:hover{
+                cursor: pointer;
+                color: rgb(205, 146, 36);
+                transition: 300ms;
+            }
+        }
+    }
+    @media (max-width:691px) {
+        
+            i{
+                display: block;
+            }
+
+            ul{
+                display: none;
+            }
+        
+    }
+}
